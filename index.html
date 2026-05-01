@@ -6,8 +6,8 @@
 <title>AG1 Consulting · One operator. Full-stack marketing infrastructure for info product owners.</title>
 <meta name="description" content="AG1 Consulting Ltd. One operator builds the full marketing stack: VSL funnels, webinars, copy, email, tech, and sales infrastructure. Setup fee + revenue share. No retainers.">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="AG1 Consulting · How I take info product owners to $100k/mo+. Solo.">
-<meta property="og:description" content="One operator marketing partnership for info product owners. $100k/mo benchmark inside your first 60 days. Active partnerships scale past $250k/mo from there. $172k month one with one client. $1M+ across the book in six months. AG1 Consulting Ltd by Andrei Givero.">
+<meta property="og:title" content="AG1 Consulting · How I generate info product owners $50-100k in 60 days or less">
+<meta property="og:description" content="One operator marketing partnership for info product owners. $50-100k in your first 60 days. $100k/mo benchmark thereafter. Active partnerships scale past $250k/mo. $172k month one with one client. $1M+ across the book in six months. AG1 Consulting Ltd by Andrei Givero.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -322,6 +322,47 @@ h2 .gold {
   width: 8px; height: 1px; background: var(--gold);
 }
 
+/* BENCHMARKS / TRAJECTORY */
+.tier-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  text-align: left;
+}
+@media (max-width: 900px) { .tier-grid { grid-template-columns: 1fr; } }
+.tier-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 6px;
+  padding: 30px 26px 32px;
+  text-align: left;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.tier-card:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+.tier-card.highlight {
+  background: linear-gradient(180deg, rgba(201,151,58,0.10), var(--surface));
+  border-color: var(--line-strong);
+  border-top-color: var(--gold-bright);
+}
+.tier-tag {
+  font-family: var(--sans); font-weight: 600; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+}
+.tier-num {
+  font-family: var(--serif); font-weight: 700;
+  font-size: 54px; line-height: 1;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  margin-bottom: 16px; letter-spacing: -1.5px;
+}
+.tier-num small {
+  font-size: 22px; opacity: 0.85; font-weight: 600;
+  -webkit-text-fill-color: initial; color: var(--gold);
+}
+.tier-body {
+  font-size: 14.5px; color: var(--text-mute); line-height: 1.65;
+}
+
 /* CASE STUDIES */
 .case-grid { display: flex; flex-direction: column; gap: 22px; }
 .case-card {
@@ -494,8 +535,8 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
 <header class="hero">
   <div class="wrap">
     <span class="eyebrow">AG1 Consulting Ltd · Est. 2024</span>
-    <h1>How I take info product owners to <span class="gold">$100k/mo+</span>. Solo.</h1>
-    <p class="hero-sub">I'm Andrei. I run AG1 Consulting Ltd, the one-person marketing partner for info product owners with a working offer and no engine. <strong>$100k/mo is the benchmark, hit inside your first 60 days.</strong> Active partnerships scale past $250k/mo from there. $172k month one with one client. $1M+ across the book in six months. No retainers. No team. No black-box agency reports.</p>
+    <h1>How I generate info product owners <span class="gold">$50-100k</span> in 60 days or less. Solo.</h1>
+    <p class="hero-sub">I'm Andrei. I run AG1 Consulting Ltd, the one-person marketing partner for info product owners with a working offer and no engine. $172k month one with one client. $1M+ across the book in six months. No retainers. No team. No black-box agency reports.</p>
     <p class="hero-meta">
       <span>Setup fee + revenue share</span>
       <span>No retainers</span>
@@ -638,30 +679,34 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
 
 <section class="block" id="partnership">
   <div class="wrap">
-    <span class="section-eyebrow">The partnership model</span>
-    <h2>Setup fee + <span class="gold">revenue share</span>. Not a retainer. Not an hourly rate.</h2>
-    <p class="section-lede">I only win when you win. The setup fee covers the build. The revenue share aligns the next twelve months. For the right operator, the structure scales toward a true 50/50 publishing partnership.</p>
+    <span class="section-eyebrow">How the partnership works</span>
+    <h2>Setup fee + revenue share. <span class="gold">Not a retainer.</span></h2>
+    <p class="section-lede">I only win when you win. The setup fee covers the build. The revenue share aligns the partnership for the year that follows. No retainer. No coordination tax. No invoice for a launch that never ships.</p>
+    <p class="section-lede">Commercial terms shape to the offer, the audience, and the partnership scope. We walk through the structure on the application call.</p>
+  </div>
+</section>
 
-    <div class="partnership">
-      <div>
-        <h3>Standard partnership</h3>
-        <p>For most info product owners. Setup fee covers the funnel, copy, tech, and launch. Revenue share kicks in once the system is running.</p>
-        <ul>
-          <li>Setup fee paid upfront or split across two to three payments</li>
-          <li>Revenue share 20 to 35 percent of net new revenue from the build</li>
-          <li>First 90 days at lower share, then scaling with results</li>
-          <li>International partnerships welcome</li>
-        </ul>
+<section class="block" id="benchmarks">
+  <div class="wrap">
+    <span class="section-eyebrow">Benchmarks</span>
+    <h2>Where the partnership <span class="gold">ends up</span>.</h2>
+    <p class="section-lede">Three tiers of monthly run-rate. Each one grounded in active partnership performance, not stretch projections.</p>
+
+    <div class="tier-grid">
+      <div class="tier-card">
+        <div class="tier-tag">Phase 1 · First 60 days</div>
+        <div class="tier-num">$50<small>-$100k/mo</small></div>
+        <div class="tier-body">Initial launch revenue from the build. The funnel goes live, the first cohort or sales window converts, the engine starts producing.</div>
       </div>
-      <div>
-        <h3>Publishing partnership</h3>
-        <p>For select operators with a proven offer who want a true co-pilot on the marketing side. I run the entire engine. You run delivery.</p>
-        <ul>
-          <li>50/50 revenue share on net new revenue from the build</li>
-          <li>I cover funnel, copy, tech, and lead infrastructure end to end</li>
-          <li>You stay focused on fulfilment and product</li>
-          <li>Limited slots. Application required.</li>
-        </ul>
+      <div class="tier-card">
+        <div class="tier-tag">Phase 2 · Steady state</div>
+        <div class="tier-num">$100<small>k/mo+</small></div>
+        <div class="tier-body">The benchmark for an active partnership. The engine is calibrated, the iteration loop is tight, the offer is converting at run-rate.</div>
+      </div>
+      <div class="tier-card highlight">
+        <div class="tier-tag">Phase 3 · Ceiling on select partnerships</div>
+        <div class="tier-num">$250<small>k/mo+</small></div>
+        <div class="tier-body">The scale tier. Reserved for partnerships where I run the entire marketing engine end to end and the offer can absorb the volume.</div>
       </div>
     </div>
   </div>
@@ -687,11 +732,11 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
       </div>
 
       <div class="case-card">
-        <div class="case-tag">Active publishing partnership</div>
+        <div class="case-tag">Active partnership</div>
         <div class="case-title">Closers Circle Pro · sales placement and training brand.</div>
-        <div class="case-body">Working with Nate as a publishing partner on Closers Circle Pro. I run the marketing engine, he runs the room. Funnel, copy, sales infrastructure, content cadence, application flow, and ad-ready creative all built and maintained from this side.</div>
+        <div class="case-body">Working with Nate on Closers Circle Pro. I run the marketing engine, he runs the room. Funnel, copy, sales infrastructure, content cadence, application flow, and ad-ready creative all built and maintained from this side.</div>
         <div class="case-meta">
-          <span>Structure: <strong>Publishing / 50-tier partnership</strong></span>
+          <span>Role: <strong>Marketing operator</strong></span>
           <span>Status: <strong>Live</strong></span>
         </div>
       </div>
@@ -738,7 +783,7 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
       </div>
       <div class="solo-card">
         <h4>Skin in the game</h4>
-        <p>Revenue share aligns the partnership for a year, not a quarter. If the funnel does not earn, neither do I. That alignment is why publishing-style partnerships exist.</p>
+        <p>Revenue share aligns the partnership for a year, not a quarter. If the funnel does not earn, neither do I. That alignment is the whole point of the model.</p>
       </div>
     </div>
   </div>
@@ -785,8 +830,8 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
     <div class="roster-grid">
       <div class="roster-card">
         <h5>Closers Circle Pro</h5>
-        <div class="niche">Publishing partner · sales placement</div>
-        <p>Active. I run the marketing engine, he runs the room. Co-pilot model, full stack on the marketing side.</p>
+        <div class="niche">Active partnership · sales placement</div>
+        <p>I run the marketing engine, Nate runs the room. Full stack on the marketing side.</p>
       </div>
       <div class="roster-card">
         <h5>UGC Creator Network</h5>
@@ -837,7 +882,7 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
       </div>
     </div>
     <div class="legal">
-      &copy; 2026 AG1 Consulting Ltd. United Kingdom. All client revenue figures are pre-tax, top-line, and reflect work delivered solo. The $172k month-one figure references one specific client partnership. The $100k/mo benchmark and the 60-day timeline reflect target partnership outcomes; the $250k/mo+ ceiling reflects best-case scaling on select partnerships. None of these figures are guarantees. Individual results vary by offer maturity, audience size, and operator commitment. Details available on the application call.
+      &copy; 2026 AG1 Consulting Ltd. United Kingdom. All client revenue figures are pre-tax, top-line, and reflect work delivered solo. The $172k month-one figure references one specific client partnership. The $50-100k 60-day reference range, the $100k/mo steady-state benchmark, and the $250k/mo+ ceiling all reflect target partnership outcomes; none are guarantees. Individual results vary by offer maturity, audience size, and operator commitment. Details available on the application call.
     </div>
   </div>
 </footer>
