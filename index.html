@@ -88,6 +88,7 @@ a:hover { color: var(--gold-bright); }
   padding: 80px 0 64px;
   border-bottom: 1px solid var(--line);
   position: relative;
+  text-align: center;
 }
 .eyebrow {
   font-family: var(--sans); font-size: 12px; letter-spacing: 3px;
@@ -100,7 +101,7 @@ a:hover { color: var(--gold-bright); }
   font-size: clamp(42px, 6.4vw, 72px);
   line-height: 1.06;
   letter-spacing: -0.5px;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
   max-width: 980px;
 }
 .hero h1 .gold {
@@ -109,11 +110,12 @@ a:hover { color: var(--gold-bright); }
 }
 .hero-sub {
   font-size: 19px; line-height: 1.6; color: var(--text-mute);
-  max-width: 720px; margin-bottom: 24px;
+  max-width: 720px; margin: 0 auto 24px;
 }
 .hero-meta {
   font-size: 14px; color: var(--text-deep-mute); letter-spacing: 0.4px;
   display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 44px;
+  justify-content: center;
 }
 .hero-meta span::before { content: "·"; color: var(--gold); margin-right: 18px; }
 .hero-meta span:first-child::before { content: ""; margin: 0; }
@@ -141,7 +143,7 @@ a:hover { color: var(--gold-bright); }
   margin-bottom: 14px;
 }
 
-.cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+.cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 8px; }
 .cta-primary {
   display: block; width: fit-content;
   font-family: var(--sans); font-weight: 600; font-size: 16px;
@@ -158,6 +160,39 @@ a:hover { color: var(--gold-bright); }
   border: 1px solid var(--line-strong); border-radius: 4px;
 }
 .cta-secondary:hover { color: var(--gold); border-color: var(--gold); }
+
+/* HERO PROOF STRIP */
+.proof-strip {
+  margin-top: 56px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+.proof-strip-eyebrow {
+  font-family: var(--sans); font-size: 11px; letter-spacing: 3px;
+  color: var(--gold); text-transform: uppercase; font-weight: 600;
+  margin-bottom: 22px; display: block;
+}
+.proof-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
+}
+@media (max-width: 720px) { .proof-grid { grid-template-columns: 1fr; } }
+.proof-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.4));
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 20px 50px -25px rgba(201,151,58,0.18);
+}
+.proof-item img {
+  width: 100%; height: auto; display: block;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+.proof-cap {
+  font-size: 13px; color: var(--text-mute); line-height: 1.55;
+  margin-top: 14px; padding: 0 4px;
+}
+.proof-cap strong { color: var(--gold); font-weight: 600; }
 
 /* SECTIONS */
 section.block { padding: 80px 0; border-bottom: 1px solid var(--line); }
@@ -473,6 +508,20 @@ footer .legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(-
     <div class="cta-row">
       <a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary" target="_blank" rel="noopener">Book A Call With Andrei</a>
       <a href="#case-studies" class="cta-secondary">See the work</a>
+    </div>
+
+    <div class="proof-strip">
+      <span class="proof-strip-eyebrow">Receipts</span>
+      <div class="proof-grid">
+        <div class="proof-item">
+          <img src="proof/revenue-dashboard.png" alt="Client revenue dashboard showing $742,715.59 total revenue with 72 percent period growth">
+          <div class="proof-cap"><strong>$742,715</strong> attributed client revenue · +72% vs previous period · Oct 2025 to Mar 2026.</div>
+        </div>
+        <div class="proof-item">
+          <img src="proof/stripe-dashboard.png" alt="Stripe dashboard showing $331K gross volume and $306K succeeded payments with 101 percent period growth">
+          <div class="proof-cap"><strong>$331K gross volume</strong> · $306,835 succeeded payments · +101% vs previous period · live Stripe overview.</div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
