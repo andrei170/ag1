@@ -201,13 +201,15 @@ section.block:last-of-type { border-bottom: 0; }
 .section-eyebrow {
   font-family: var(--sans); font-size: 11px; letter-spacing: 3px;
   color: var(--gold); text-transform: uppercase; font-weight: 600;
-  margin-bottom: 16px; display: inline-block;
+  margin-bottom: 16px; display: block;
+  text-align: center;
 }
 h2 {
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(32px, 4.4vw, 48px);
   line-height: 1.1; letter-spacing: -0.5px;
-  margin-bottom: 22px; max-width: 880px;
+  margin: 0 auto 22px; max-width: 880px;
+  text-align: center;
 }
 h2 .gold {
   background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
@@ -215,7 +217,8 @@ h2 .gold {
 }
 .section-lede {
   font-size: 18px; color: var(--text-mute); max-width: 720px; line-height: 1.65;
-  margin-bottom: 44px;
+  margin: 0 auto 44px;
+  text-align: center;
 }
 
 /* RESULT STRIP */
